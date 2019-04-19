@@ -1,0 +1,344 @@
+@import url('rest.css');
+
+html{
+	line-height: initial;
+}
+body{
+	font-size: 0.32rem;
+}
+/*上面两行代码特意提出来，是为了解决html字体过大时，他的line-height对子孙元素的不良影响。必不可少，开发时你可以把他放到样式重置中。*/
+ header{
+	 height: 1.2rem;
+	 background-color: #ffffff;
+	 display: -webkit-flex;
+	 display: flex;
+	 align-items: center;
+	 position: relative;
+	 box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.06);
+ }
+footer{
+	height: 1.2rem;
+	background-color: #ffffff;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.06);
+}
+footer div{
+	margin-left: .32rem;
+	font-size: .3rem;
+	line-height: .4rem;
+	color: #000000;
+}
+.nav-back{
+	height: .32rem;
+	width: .32rem;
+	position: absolute;
+	left: .32rem;
+}
+.nav-arrow{
+	height: .19rem;
+	width: .32rem;
+	position: absolute;
+	right: .32rem;
+}
+.nav-more{
+	height: .38rem;
+	width: .08rem;
+	position: absolute;
+	right: .32rem;
+
+}
+.icon-install{
+	height: 2.9rem;
+	position: relative;
+	/*background-color: #efefef;*/
+}
+.logo-name{
+	width: 4.4rem;
+	height: 1.4rem;
+	margin: .3rem 0 0 .3rem;
+	position: relative;
+}
+.logo-name img{
+	width: 1.4rem;
+	height: 1.4rem;
+}
+.logo-name2{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.logo-name2 > div:nth-child(1){
+	font-size: .32rem;
+	color: #333333;
+	line-height: .48rem;
+}
+.logo-name2 > div:nth-child(2){
+	font-size: .27rem;
+	color: #00865E;
+	line-height: .4rem;
+}
+.logo-name2 > div:nth-child(3){
+	font-size: .24rem;
+	line-height: .34rem;
+	color: #666666;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 16px;
+}
+.install-app{
+	height: 0.7rem;
+	width: 2.4rem;
+	text-align: center;
+	line-height: 0.7rem;
+	background-color: #00865E;
+	color: #ffffff;
+	position: absolute;
+	right: .3rem;
+
+}
+.install-app span{
+	font-size: .3rem;
+	line-height: .4rem;
+}
+.star-number{
+	height: 1.66rem;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+}
+.icon-01,.icon-02,.icon-03,.icon-04{
+	flex: 1;
+}
+.icon-01 img{
+	width: .8rem;
+	height: .33rem;
+	margin-bottom: .1rem;
+}
+.icon-01 div, .icon-02 div, .icon-03 div, .icon-04 div{
+	font-size: .22rem;
+	line-height: .29rem;
+	color: #666666;
+}
+.icon-02 img,.icon-03 img{
+	width: .34rem;
+	height: .34rem;
+	margin-bottom: .1rem;
+}
+.icon-04 img{
+	width: .75rem;
+	height: .19rem;
+	margin-bottom: .1rem;
+}
+.swiper-img{
+	margin: .3rem 0 0rem .3rem;
+	overflow: hidden;
+}
+.swiper-img img{
+	height: 5rem;
+	width: 3rem;
+}
+.swiper-name{
+	text-align: center;
+	color: #666666;
+	font-size: .3rem;
+	line-height: .4rem;
+	margin-top: .3rem;
+	margin-bottom: .62rem;
+}
+.swiper-name img{
+	width: 5.12rem;
+	height: 0.36rem;
+	margin-top: .3rem;
+	margin-bottom: .48rem;
+}
+.read-more{
+	color: #00865E;
+	font-size: 0.3rem;
+	line-height: .4rem;
+	text-align: center;
+	margin-bottom: .31rem;
+}
+.score-more{
+	height: 4.2rem;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 4.5rem;
+}
+.ratings{
+	position: relative;
+}
+.ratings span{
+	font-size: .3rem;
+	line-height: .4rem;
+	margin-left: .29rem;
+}
+.ratings img{
+	height: .3rem;
+	width: .3rem;
+	position: absolute;
+	right: .3rem;
+	top: .48rem;
+}
+.ratings{
+	border-top: 1px solid #dddddd;
+}
+.ratings{
+	padding-top: .4rem;
+}
+.fraction-star{
+	text-align: center;
+	width: 1.6rem;
+	margin-bottom: .41rem;
+}
+.fraction-star div:nth-child(1){
+	font-size: 1.2rem;
+	line-height: 1.58rem;
+	color: #000000;
+}
+.fraction-number2{
+	font-size: 0.26rem;
+	line-height: .34rem;
+	color: #666666;
+}
+.fraction-star img{
+	width: 1.44rem;
+	height: 0.22rem;
+}
+.img-progress img{
+	width: 3.6rem;
+	height: 1.72rem;
+}
+.fraction-number-star{
+	position: relative;
+}
+.fraction-number{
+	position: relative;
+	left: .61rem;
+}
+.img-progress{
+	display: flex;
+	position: absolute;
+	top: .3rem;
+	right: .61rem;
+}
+.img-progress ul{
+	line-height: .38rem;
+	position: relative;
+	right: .2rem;
+	top: -0.1rem;
+}
+.user-name{
+	position: relative;
+	margin: auto 0;
+}
+.user-name img{
+	height: 0.7rem;
+	width: 0.7rem;
+	margin-top: .29rem;
+	margin-left: .29rem;
+}
+.user-name div{
+	display: inline-block;
+	margin-left: .33rem;
+	position: relative;
+	top: -0.22rem;
+}
+.user-date img{
+	width: 1.42rem;
+	height: .24rem;
+	margin-top: .39rem;
+	margin-left: .29rem;
+}
+.user-date div{
+	display: inline-block;
+	margin-left: .15rem;
+	font-size: .26rem;
+	line-height: .31rem;
+	color: #666666;
+
+}
+.user-text{
+	color: #999999;
+	font-size: .3rem;
+	line-height: .36rem;
+	margin: .29rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.user-text-bor{
+	border-top: 2px solid #e0e0e0;
+	width: .7rem;
+	margin-left: .29rem;
+}
+.user-mark{
+	color: #666666;
+	font-size: .26rem;
+	line-height: .34rem;
+	margin-left: .29rem;
+	margin-top: .32rem;
+	position: relative;
+	margin-bottom: .29rem;
+}
+.user-mark div{
+	display: inline-block;
+}
+.user-mark .user-mark-yes, .user-mark .user-mark-no{
+	width: 1rem;
+	height: 0.5rem;
+	border: 1px solid #dddddd;
+	text-align: center;
+	border-radius: 1rem;
+	display: inline-block;
+	position: absolute;
+	right: .29rem;
+	line-height: 0.5rem;
+	top: -5px;
+}
+.user-mark .user-mark-yes{
+	right: 1.5rem;
+}
+.user-mark .user-mark-no{
+
+}
+.user-comment{
+	border-bottom: 1px solid #dddddd;
+}
+.footer-read-more{
+	color: #00865E;
+	font-size: 0.3rem;
+	line-height: .4rem;
+	text-align: center;
+	margin-bottom: .31rem;
+	padding: .61rem;
+}
+.fractional-number{
+	display: flex;
+	margin-top: 0.33rem;
+	margin-bottom: 0.3rem;
+}
+.fractional-number1{
+	text-align: center;
+	margin-left: 0.51rem;
+}
+
+.fractional-number1 div:nth-child(1){
+	font-size: 1.2rem;line-height: 1.58rem;color: #000000;
+}
+.fractional-number1 img{
+	width: 1.44rem;height: 0.22rem;
+}
+.fractional-number2{
+	display: inline-block;margin-top: 0.33rem;margin-left: 0.8rem;line-height: 0.36rem;margin-right: 0.2rem
+}
+.fractional-number3{
+	display: inline-block;width: 3.6rem; height: 1.72rem;margin-top: 0.33rem;
+}
